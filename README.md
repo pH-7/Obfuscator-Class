@@ -12,6 +12,8 @@ Not easy readable by developers (unless they are ready to spend lot of time). Th
 
 ## Usage
 
+### Example 1
+
 ```PHP
 <?php
 $sData = <<<'DATA'
@@ -21,6 +23,37 @@ DATA;
 $sObfusationData = new Obfuscator($sData, 'Class/Code NAME');
 file_put_contents('my_obfuscation_data.php', '<?php ' . "\r\n" . $sObfusationData);
 ```
+
+### Example 2
+
+```PHP
+<?php
+require 'Obfuscator.class.php';
+
+$sData = <<<'DATA'
+    $time = date("H");
+    echo "
+
+    The hour (of the server) is " . $time;
+    echo ", and will give the following message:
+
+    ";
+    if ($time < "10") {
+    echo "Have a good morning!";
+    } elseif ($time < "20") {
+    echo "Have a good day!";
+    } else {
+    echo "Have a good night!";
+    }
+DATA;
+
+$sObfusationData = new Obfuscator($sData, 'Give a name to the piece of code you want to obfuscate');
+file_put_contents('obfuscated_code.php', '<?php ' . "\r\n" . $sObfusationData);
+```
+
+Run `obfuscated_code.php` file and you will see something like below:
+
+**The hour (of the server) is 19, and will give the following message: Have a good day!**
 
 
 ## History
@@ -40,7 +73,7 @@ I'm **[Pierre-Henry Soria](http://about.ph7.me)**, Software Developer, love lear
 
 ## How Contacting Me?
 
-You can by email at **pierrehenrysoria [[AT]] gmail [[D0T]] com**
+You can by email at **pierrehenrysoria+github [[AT]] gmail [[D0T]] com**
 
 
 ## The License
