@@ -11,6 +11,10 @@ class Obfuscator
 
     private $_sName, $_sData, $_sPreOutput, $_sOutput;
 
+    /**
+     * @param string $sData Code to obfuscate.
+     * @param string $sName Give a name of the code you want to obfuscate.
+     */
     public function __construct($sData, $sName)
     {
         $this->_sName = $sName;
