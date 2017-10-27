@@ -1,15 +1,24 @@
 <?php
 /**
- * @author           Pierre-Henry Soria <pierrehenrysoria@gmail.com>
- * @copyright        (c) 2014-2016, Pierre-Henry Soria. All Rights Reserved.
+ * @author           Pierre-Henry Soria <hi@ph7.me>
+ * @copyright        (c) 2014-2017, Pierre-Henry Soria. All Rights Reserved.
  * @license          CC-BY - http://creativecommons.org/licenses/by/3.0/
  * @link             http://about.ph7.me
  */
 
 class Obfuscator
 {
+    /** @var string */
+    private $sName;
 
-    private $_sName, $_sData, $_sPreOutput, $_sOutput;
+    /** @var string */
+    private $sData;
+
+    /** @var string */
+    private $sPreOutput;
+
+    /** @var string */
+    private $sOutput;
 
     /**
      * @param string $sData Code to obfuscate.
@@ -17,20 +26,20 @@ class Obfuscator
      */
     public function __construct($sData, $sName)
     {
-        $this->_sName = $sName;
-        $this->_sData = $sData;
+        $this->sName = $sName;
+        $this->sData = $sData;
         $this->encrypt();
     }
 
     public function __toString()
     {
-        return $this->_sOutput;
+        return $this->sOutput;
     }
 
     public function encrypt()
     {
-        $this->_sData = base64_encode($this->_sData);
-        $this->_sPreOutput = <<<'DATA1'
+        $this->sData = base64_encode($this->sData);
+        $this->sPreOutput = <<<'DATA1'
         $____='printf';$___________='[NAME] Class...';
         [BREAK]
 $___                                                                            =                 'Y3JlYXRlX0ZVTkNUSU9O'     ;
@@ -44,7 +53,7 @@ $____                                                                           
         $_____($____($___________));
 DATA1;
 
-        $this->_sOutput = <<<'DATA2'
+        $this->sOutput = <<<'DATA2'
         $__='printf';$_='Loading the [NAME] Class...';
         [BREAK]
         $_____='    b2JfZW5kX2NsZWFu';                                                                                                                                                                              $______________='cmV0dXJuIGV2YWwoJF8pOw==';
@@ -63,16 +72,20 @@ DATA2;
 
     protected function make()
     {
-        $sSpaces = $this->makeBreak(99+(strlen($this->_sName)*4)); // Most people will have their PC bugged if they want to modify the code with an editor
+        $sSpaces = $this->makeBreak(99+(strlen($this->sName)*4)); // Most people will have their PC bugged if they want to modify the code with an editor
 
-        $this->_sPreOutput = str_replace(array('[DATA]', '[NAME]', '[BREAK]'), array($this->_sData, $this->_sName, $sSpaces . "\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n"), $this->_sPreOutput);
-        $this->_sOutput = str_replace(array('[PRE_OUTPUT]', '[NAME]', '[BREAK]'), array(base64_encode(gzcompress($this->_sPreOutput,9)), $this->_sName, $sSpaces), $this->_sOutput);
+        $this->sPreOutput = str_replace(array('[DATA]', '[NAME]', '[BREAK]'), array($this->sData, $this->sName, $sSpaces . "\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n"), $this->sPreOutput);
+        $this->sOutput = str_replace(array('[PRE_OUTPUT]', '[NAME]', '[BREAK]'), array(base64_encode(gzcompress($this->sPreOutput,9)), $this->sName, $sSpaces), $this->sOutput);
     }
 
+    /**
+     * @param int $iNum
+     *
+     * @return string
+     */
     protected function makeBreak($iNum)
     {
         $sToken = "\r\n";
         return str_repeat($sToken, $iNum);
     }
-
 }
