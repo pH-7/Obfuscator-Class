@@ -58,6 +58,11 @@ Run `obfuscated_code.php` file and you will see something like below:
 **The hour (of the server) is 19, and will give the following message: Have a good day!**
 
 
+## Requirement
+
+* PHP 5.2 or higher (works with PHP 7.*+ as well!)
+
+
 ## History
 
 I first created it for my needs, especially for the license file of my [pH7CMS Software](https://github.com/pH7Software/pH7-Social-Dating-CMS) in early 2014 but now (summer 2016), I don't need to keep this project private and want to share it for the others (hoping it will help you and saving time!).
