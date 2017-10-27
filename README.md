@@ -19,7 +19,7 @@ Not easy readable by developers (unless they are ready to spend lot of time). Th
 require 'Obfuscator.class.php';
 
 $sData = <<<'DATA'
-    echo 'This is my PHP code, can be class class, interface, trait,... in PHP , 5, 7, etc.';
+    echo 'This is my PHP code, can be class class, interface, trait,... in PHP 5, 7, 7.2, ..., etc.';
 DATA;
 
 $sObfusationData = new Obfuscator($sData, 'Class/Code NAME');
@@ -33,19 +33,17 @@ file_put_contents('my_obfuscated_data.php', '<?php ' . "\r\n" . $sObfusationData
 require 'Obfuscator.class.php';
 
 $sData = <<<'DATA'
-    $time = date("H");
-    echo "
+    $hour = date('H');
 
-    The hour (of the server) is " . $time;
-    echo ", and will give the following message:
+    echo 'The hour (of the server) is ' . date('H:m');
+    echo ', and will give the following message:<br><br>';
 
-    ";
-    if ($time < "10") {
-    echo "Have a good morning!";
-    } elseif ($time < "20") {
-    echo "Have a good day!";
+    if ($hour < 10) {
+        echo 'Have a good morning!';
+    } elseif ($hour < 20) {
+        echo 'Have a good day!';
     } else {
-    echo "Have a good night!";
+        echo 'Have a good night! zZz z';
     }
 DATA;
 
