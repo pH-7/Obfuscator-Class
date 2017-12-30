@@ -1,7 +1,7 @@
 <?php
 /**
  * @author           Pierre-Henry Soria <hi@ph7.me>
- * @copyright        (c) 2014-2017, Pierre-Henry Soria. All Rights Reserved.
+ * @copyright        (c) 2014-2018, Pierre-Henry Soria. All Rights Reserved.
  * @license          CC-BY - http://creativecommons.org/licenses/by/3.0/
  * @link             http://about.ph7.me
  */
