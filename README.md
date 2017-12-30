@@ -56,6 +56,21 @@ Run `obfuscated_code.php` file and you will see something like below:
 **The hour (of the server) is 19, and will give the following message: Have a good day!**
 
 
+### Example 3
+
+```PHP
+<?php
+require 'Obfuscator.class.php';
+
+$filename = 'myphpfile'; // A PHP file you want to obfuscate
+
+$sData = file_get_contents($filename . '.php');
+$sData = str_replace(array('<?php', '<?', '?>'), '', $sData); // Strip PHP open/close tags
+$sObfusationData = new Obfuscator($sData, 'Class/Code NAME');
+file_put_contents($filename . '_obfuscated.php', '<?php ' . "\r\n" . $sObfusationData);
+```
+
+
 ## Requirement
 
 * PHP 5.2 or higher (works with PHP 7.*+ as well!)
