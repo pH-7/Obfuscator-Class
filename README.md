@@ -62,7 +62,7 @@ Run `obfuscated_code.php` file and you will see something like below:
 <?php
 require 'Obfuscator.class.php';
 
-$filename = 'myphpfile'; // A PHP file you want to obfuscate
+$filename = 'myphpfile'; // A PHP filename (without .php) that you want to obfuscate
 
 $sData = file_get_contents($filename . '.php');
 $sData = str_replace(array('<?php', '<?', '?>'), '', $sData); // Strip PHP open/close tags
