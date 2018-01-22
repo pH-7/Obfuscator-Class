@@ -73,10 +73,10 @@ DATA2;
 
     private function make()
     {
-        $sSpaces = $this->makeBreak(99+(strlen($this->sName)*4)); // Most people will have their PC bugged if they want to modify the code with an editor
+        $sSpaces = $this->makeBreak(99 + (strlen($this->sName) * 4)); // Most people will have their PC bugged if they want to modify the code with an editor
 
         $this->sPreOutput = str_replace(array('[DATA]', '[NAME]', '[BREAK]'), array($this->sData, $this->sName, $sSpaces . "\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n"), $this->sPreOutput);
-        $this->sOutput = str_replace(array('[PRE_OUTPUT]', '[NAME]', '[BREAK]'), array(base64_encode(gzcompress($this->sPreOutput,9)), $this->sName, $sSpaces), $this->sOutput);
+        $this->sOutput = str_replace(array('[PRE_OUTPUT]', '[NAME]', '[BREAK]'), array(base64_encode(gzcompress($this->sPreOutput, 9)), $this->sName, $sSpaces), $this->sOutput);
     }
 
     /**
