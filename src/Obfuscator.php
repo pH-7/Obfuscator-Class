@@ -28,6 +28,7 @@ class Obfuscator
     {
         $this->sName = $sName;
         $this->sData = $sData;
+
         $this->encrypt();
     }
 
@@ -36,7 +37,7 @@ class Obfuscator
         return $this->sOutput;
     }
 
-    public function encrypt()
+    private function encrypt()
     {
         $this->sData = base64_encode($this->sData);
         $this->sPreOutput = <<<'DATA1'
@@ -54,7 +55,7 @@ $____                                                                           
 DATA1;
 
         $this->sOutput = <<<'DATA2'
-        $__='printf';$_='Loading the [NAME] Class...';
+        $__='printf';$_='Loading the [NAME] ...';
         [BREAK]
         $_____='    b2JfZW5kX2NsZWFu';                                                                                                                                                                              $______________='cmV0dXJuIGV2YWwoJF8pOw==';
 $__________________='Q1JFQXRlX2Z1bkNUaU9u';
@@ -70,7 +71,7 @@ DATA2;
         $this->make();
     }
 
-    protected function make()
+    private function make()
     {
         $sSpaces = $this->makeBreak(99+(strlen($this->sName)*4)); // Most people will have their PC bugged if they want to modify the code with an editor
 
@@ -83,7 +84,7 @@ DATA2;
      *
      * @return string
      */
-    protected function makeBreak($iNum)
+    private function makeBreak($iNum)
     {
         $sToken = "\r\n";
         return str_repeat($sToken, $iNum);

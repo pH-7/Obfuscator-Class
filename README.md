@@ -16,7 +16,7 @@ Not easy readable by developers (unless they are ready to spend lot of time). Th
 
 ```PHP
 <?php
-require 'Obfuscator.class.php';
+require 'src/Obfuscator.php';
 
 $sData = <<<'DATA'
     echo 'This is my PHP code, can be class class, interface, trait,... in PHP 5, 7, 7.2, ..., etc.';
@@ -30,7 +30,7 @@ file_put_contents('my_obfuscated_data.php', '<?php ' . "\r\n" . $sObfusationData
 
 ```PHP
 <?php
-require 'Obfuscator.class.php';
+require 'src/Obfuscator.php';
 
 $sData = <<<'DATA'
     $hour = date('H');
@@ -60,7 +60,7 @@ Run `obfuscated_code.php` file and you will see something like below:
 
 ```PHP
 <?php
-require 'Obfuscator.class.php';
+require 'src/Obfuscator.php';
 
 $filename = 'myphpfile'; // A PHP filename (without .php) that you want to obfuscate
 
