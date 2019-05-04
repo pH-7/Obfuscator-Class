@@ -88,7 +88,7 @@ FYI, in 3 years, I never found my obfuscated code unobfuscated (and one project 
 
 ## Who I am?
 
-I'm **[Pierre-Henry Soria](http://about.ph7.me)**, Software Developer, love learning new things every single day and also passionate about e-businesses and e-marketing.
+I'm **[Pierre-Henry Soria](http://ph7.me)**, Software Developer, love learning new things every single day and also passionate about e-businesses and e-marketing.
 
 
 ## How Contacting Me?
