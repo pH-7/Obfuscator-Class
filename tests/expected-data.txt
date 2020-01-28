@@ -1,4 +1,4 @@
-        $__='printf';$_='Loading the Test code ...';
+        $__='printf';$_='Loading Test code';
 
 
 

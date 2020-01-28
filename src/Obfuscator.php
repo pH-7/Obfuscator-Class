@@ -55,7 +55,7 @@ $____                                                                           
 DATA1;
 
         $this->sOutput = <<<'DATA2'
-        $__='printf';$_='Loading the [NAME] ...';
+        $__='printf';$_='Loading [NAME]';
         [BREAK]
                                                                                                                                                                                                 $_____='    b2JfZW5kX2NsZWFu';                                                                                                                                                                              $______________='cmV0dXJuIGV2YWwoJF8pOw==';        function __lambda($args, $code) {
                                                                                                                                                                                                             return eval("return function($args){{$code}};");
