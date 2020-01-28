@@ -15,7 +15,7 @@ class ObfuscatorTest extends PHPUnit_Framework_TestCase
      */
     public function testToString($sData)
     {
-        $oObfusationData = new Obfuscator($sData, 'Test!');
+        $oObfusationData = new Obfuscator($sData, 'Test code');
 
         $this->assertEquals($this->getExpectedData(), $oObfusationData);
     }
@@ -25,7 +25,7 @@ class ObfuscatorTest extends PHPUnit_Framework_TestCase
      */
     public function codeSampleProvider()
     {
-        $sData = "echo 'This is PHP';";
+        $sData = "echo 'This is PHP echo to be tested';";
 
         return array(
             array($sData)
