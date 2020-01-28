@@ -35,6 +35,12 @@ $sObfusationData = new Obfuscator($sData, 'Class/Code NAME');
 file_put_contents('my_obfuscated_data.php', '<?php ' . "\r\n" . $sObfusationData);
 ```
 
+Run the `my_obfuscated_data.php` freshly created, and you will see:
+> This is my PHP code, can be class class, interface, trait,... in PHP 5, 7, 7.2, ..., etc.
+
+If you open the file, you will see that your code is totally hidden (obfuscated).
+
+
 ### Example 2
 
 ```PHP
