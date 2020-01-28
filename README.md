@@ -28,7 +28,7 @@ If you specify code to be obfuscated with `<?php`, you will get a critical synta
 require 'src/Obfuscator.php';
 
 $sData = <<<'DATA'
-    echo 'This is my PHP code, can be class class, interface, trait,... in PHP 5, 7, 7.2, ..., etc.';
+    echo 'This is my PHP code, can be class class, interface, trait, etc. in PHP 5, 7, 7.2, 7.4 and higher.';
 DATA;
 
 $sObfusationData = new Obfuscator($sData, 'Class/Code NAME');
@@ -36,7 +36,7 @@ file_put_contents('my_obfuscated_data.php', '<?php ' . "\r\n" . $sObfusationData
 ```
 
 Run the `my_obfuscated_data.php` freshly created, and you will see:
-> This is my PHP code, can be class class, interface, trait,... in PHP 5, 7, 7.2, ..., etc.
+> This is my PHP code, can be class class, interface, trait, etc. in PHP 5, 7, 7.2, 7.4 and higher.
 
 If you open the file, you will see that your code is totally hidden (obfuscated).
 
