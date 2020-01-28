@@ -1,9 +1,9 @@
 <?php
 /**
  * @author           Pierre-Henry Soria <hi@ph7.me>
- * @copyright        (c) 2014-2018, Pierre-Henry Soria. All Rights Reserved.
+ * @copyright        (c) 2014-2020, Pierre-Henry Soria. All Rights Reserved.
  * @license          CC-BY - http://creativecommons.org/licenses/by/3.0/
- * @link             http://ph7.me
+ * @link             https://ph7.me
  */
 
 class Obfuscator
@@ -22,7 +22,7 @@ class Obfuscator
 
     /**
      * @param string $sData Code to obfuscate.
-     * @param string $sName Give a name of the code you want to obfuscate.
+     * @param string $sName Give a name of the code you want to obfuscate (to know later on what were the things you obfuscated).
      */
     public function __construct($sData, $sName)
     {

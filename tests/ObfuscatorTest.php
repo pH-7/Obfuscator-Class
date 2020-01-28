@@ -1,9 +1,9 @@
 <?php
 /**
  * @author           Pierre-Henry Soria <hi@ph7.me>
- * @copyright        (c) 2018, Pierre-Henry Soria. All Rights Reserved.
+ * @copyright        (c) 2018-2020, Pierre-Henry Soria. All Rights Reserved.
  * @license          CC-BY - http://creativecommons.org/licenses/by/3.0/
- * @link             http://ph7.me
+ * @link             https://ph7.me
  */
 
 class ObfuscatorTest extends PHPUnit_Framework_TestCase
