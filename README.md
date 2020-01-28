@@ -14,6 +14,13 @@ Not easy readable by developers (unless they are ready to spend lot of time). Th
 
 ## Usage
 
+### Take out `<php` before to obfuscate
+
+First of all, please make sure to strip the PHP open/close tags `<?php` and `?>`
+
+If you specify code to be obfuscated with `<?php`, you will get a critical syntax error.
+
+
 ### Example 1
 
 ```PHP
