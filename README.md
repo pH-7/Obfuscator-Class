@@ -1,6 +1,8 @@
 # PHP Obfuscator
 
-Simple and effective Obfuscator PHP class (this is not a stupid `base64 encoding` script, but a real and effective obfuscation script)
+Simple, easy-to-use and effective Obfuscator PHP class.
+
+**this is not a stupid `base64 encoding` script, but a real and effective obfuscation script).**
 
 
 ## Overview
