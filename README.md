@@ -23,7 +23,7 @@ If you specify code to be obfuscated with `<?php`, you will get a critical synta
 
 ### Example 1
 
-```PHP
+```php
 <?php
 require 'src/Obfuscator.php';
 
@@ -43,7 +43,7 @@ If you open the file, you will see that your code is totally hidden (obfuscated)
 
 ### Example 2
 
-```PHP
+```php
 <?php
 require 'src/Obfuscator.php';
 
@@ -73,7 +73,7 @@ Run `obfuscated_code.php` file and you will see something like below:
 
 ### Example 3
 
-```PHP
+```php
 <?php
 require 'src/Obfuscator.php';
 
@@ -88,7 +88,7 @@ file_put_contents($filename . '_obfuscated.php', '<?php ' . "\r\n" . $sObfusatio
 
 ## Requirement
 
-* PHP 5.2 or higher (works also with PHP 7.2+!)
+* PHP 5.2 or higher (works also with PHP 7.2, ..., 7.4, and beyond!)
 
 
 ## History
@@ -101,16 +101,16 @@ I did change anything since the first version and didn't review it, so could be 
 FYI, in 3 years, I never found my obfuscated code unobfuscated (and one project which is [pH7CMS](https://sourceforge.net/p/ph7socialdating) had been downloaded by over 50,000 users) so you can be quite confident (however as you can understand, I cannot give any guarantee on it).
 
 
-## Who am I?
+## Who Am I?
 
 I'm **[Pierre-Henry Soria](https://ph7.me)**, Software Developer, love learning new things every single day and also passionate about e-businesses and e-marketing.
 
 
-## How Contacting Me?
+## Wanna Contact Me?
 
 You can by email at **pierrehenrysoria+github [[AT]] gmail [[D0T]] com**
 
 
-## The License
+## License
 
 The script is under [Creative Commons Attribution 3.0](http://creativecommons.org/licenses/by/3.0/) license or later; See the LICENSE.txt file.
