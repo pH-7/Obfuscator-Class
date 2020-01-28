@@ -2,7 +2,7 @@
 /**
  * @author           Pierre-Henry Soria <hi@ph7.me>
  * @copyright        (c) 2014-2018, Pierre-Henry Soria. All Rights Reserved.
- * @license          CC-BY - http://creativecommons.org/licenses/by/3.0/
+ * @license          MIT License; <https://opensource.org/licenses/MIT>
  * @link             http://ph7.me
  */
 
