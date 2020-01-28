@@ -3,15 +3,18 @@
     "description": " Simple and effective Obfuscator PHP class (this is not a stupid base64 encoding script, but a real and effective obfuscation script)",
     "keywords": ["obfuscator", "obfuscation", "encryption", "hide-code", "encoder", "encode", "obfuscate"],
     "type": "library",
-    "homepage": "http://ph7.me",
+    "homepage": "https://ph7.me",
     "license": "GPL-3.0-or-later",
     "authors": [
         {
             "name": "Pierre-Henry Soria",
             "email": "hi@ph7.me",
-            "homepage": "http://ph7.me"
+            "homepage": "https://pierrehenry.be"
         }
     ],
+    "require": {
+      "php": ">=5.2.0"
+    },
     "require-dev": {
         "phpunit/phpunit": "^5.5"
     },
