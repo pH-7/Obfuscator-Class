@@ -101,9 +101,9 @@ I did change anything since the first version and didn't review it, so could be 
 FYI, in 3 years, I never found my obfuscated code unobfuscated (and one project which is [pH7CMS](https://sourceforge.net/p/ph7socialdating) had been downloaded by over 50,000 users) so you can be quite confident (however as you can understand, I cannot give any guarantee on it).
 
 
-## Who I am?
+## Who am I?
 
-I'm **[Pierre-Henry Soria](http://ph7.me)**, Software Developer, love learning new things every single day and also passionate about e-businesses and e-marketing.
+I'm **[Pierre-Henry Soria](https://ph7.me)**, Software Developer, love learning new things every single day and also passionate about e-businesses and e-marketing.
 
 
 ## How Contacting Me?
