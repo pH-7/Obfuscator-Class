@@ -1,9 +1,9 @@
 <?php
 /**
  * @author           Pierre-Henry Soria <hi@ph7.me>
- * @copyright        (c) 2018, Pierre-Henry Soria. All Rights Reserved.
+ * @copyright        (c) 2018-2020, Pierre-Henry Soria. All Rights Reserved.
  * @license          MIT License; <https://opensource.org/licenses/MIT>
- * @link             http://ph7.me
+ * @link             https://ph7.me
  */
 
 class ObfuscatorTest extends PHPUnit_Framework_TestCase
@@ -15,7 +15,7 @@ class ObfuscatorTest extends PHPUnit_Framework_TestCase
      */
     public function testToString($sData)
     {
-        $oObfusationData = new Obfuscator($sData, 'Test!');
+        $oObfusationData = new Obfuscator($sData, 'Test code');
 
         $this->assertEquals($this->getExpectedData(), $oObfusationData);
     }
@@ -25,7 +25,7 @@ class ObfuscatorTest extends PHPUnit_Framework_TestCase
      */
     public function codeSampleProvider()
     {
-        $sData = "echo 'This is PHP';";
+        $sData = "echo 'This is PHP echo to be tested';";
 
         return array(
             array($sData)

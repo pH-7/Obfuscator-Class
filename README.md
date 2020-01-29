@@ -1,34 +1,51 @@
 # PHP Obfuscator
 
-Simple and effective Obfuscator PHP class (this is not a stupid `base64 encoding` script, but a real and effective obfuscation script)
+Simple, easy-to-use and effective Obfuscator PHP class.
+
+**Not just a stupid `base64 encoding` script, but a real and effective obfuscation script).**
+
+Ideal to obfuscate some critical pieces of your software such as licensing verification functions.
 
 
 ## Overview
 
-If you want to keep your open source code private, but working on all Web hosting. This **Obfuscator** class is the obfuscator you need!
+If you want to keep your open source code private, but working on all Web hosting, this **Obfuscator** class is THE obfuscator you need!
 
-Not easy readable by developers (unless they are ready to spend lot of time). This will really discourage them :smiley:
+Not easily readable by developers (unless they are ready to spend lot of time). It will definitely discourage them! :smiley:
 
 
 ## Usage
 
+### Take out `<php` before to obfuscate
+
+First of all, please make sure to strip the PHP open/close tags `<?php` and `?>`
+
+If you specify code to be obfuscated with `<?php`, you will get a critical syntax error.
+
+
 ### Example 1
 
-```PHP
+```php
 <?php
 require 'src/Obfuscator.php';
 
 $sData = <<<'DATA'
-    echo 'This is my PHP code, can be class class, interface, trait,... in PHP 5, 7, 7.2, ..., etc.';
+    echo 'This is my PHP code, can be class class, interface, trait, etc. in PHP 5, 7, 7.2, 7.4 and higher.';
 DATA;
 
 $sObfusationData = new Obfuscator($sData, 'Class/Code NAME');
 file_put_contents('my_obfuscated_data.php', '<?php ' . "\r\n" . $sObfusationData);
 ```
 
+Run the `my_obfuscated_data.php` freshly created, and you will see:
+> This is my PHP code, can be class class, interface, trait, etc. in PHP 5, 7, 7.2, 7.4 and higher.
+
+If you open the file, you will see that your code is totally hidden (obfuscated).
+
+
 ### Example 2
 
-```PHP
+```php
 <?php
 require 'src/Obfuscator.php';
 
@@ -58,14 +75,14 @@ Run `obfuscated_code.php` file and you will see something like below:
 
 ### Example 3
 
-```PHP
+```php
 <?php
 require 'src/Obfuscator.php';
 
 $filename = 'myphpfile'; // A PHP filename (without .php) that you want to obfuscate
 
 $sData = file_get_contents($filename . '.php');
-$sData = str_replace(array('<?php', '<?', '?>'), '', $sData); // Strip PHP open/close tags
+$sData = str_replace(array('<?php', '<?', '?>'), '', $sData); // We strip the open/close PHP tags
 $sObfusationData = new Obfuscator($sData, 'Class/Code NAME');
 file_put_contents($filename . '_obfuscated.php', '<?php ' . "\r\n" . $sObfusationData);
 ```
@@ -73,29 +90,30 @@ file_put_contents($filename . '_obfuscated.php', '<?php ' . "\r\n" . $sObfusatio
 
 ## Requirement
 
-* PHP 5.2 or higher (works with PHP 7.*+ as well!)
+* PHP 5.2 or higher (works also with PHP 7.2, ..., 7.4, and beyond!)
 
 
 ## History
 
-I first created it for my needs, especially for the license file of my [pH7CMS Software](https://github.com/pH7Software/pH7-Social-Dating-CMS) in early 2014 but now (summer 2016), I don't need to keep this project private and want to share it for the others (hoping it will help you and saving time!).
+I began to create this obfuscation tool in early 2014 for my own needs, especially for pH7CMSPro that had a licensing file which was unlocking some premium features if a valid license key was purchased by a client.
+In summer 2016, the Pro version of [pH7CMS](https://github.com/pH7Software/pH7-Social-Dating-CMS) was discontinued, and realize there was no reason to keep this project private and I wanted to share it with others (hoping it will help them and save their time!).
 
-I did change anything since the first version and didn't review it, so could be improved. Feel free to add your improvements by forking it and create a new PR. It will be a pleasure for me to see your contribution!
-
-
-FYI, in 3 years, I never found my obfuscated code unobfuscated (and one project which is [pH7CMS](https://sourceforge.net/p/ph7socialdating) had been downloaded by over 50,000 users) so you can be quite confident (however as you can understand, I cannot give any guarantee on it).
+Feel free to add your improvements in it by forking the repo and creating a new PR. I will be pleased to review your contribution!
 
 
-## Who I am?
-
-I'm **[Pierre-Henry Soria](http://ph7.me)**, Software Developer, love learning new things every single day and also passionate about e-businesses and e-marketing.
+FYI, in 3 years' time, I never found my obfuscated code unobfuscated (and the software was downloaded by over 50,000 users). You can be quite confident then.
 
 
-## How Contacting Me?
+## Who Am I?
+
+I'm **[Pierre-Henry Soria](https://ph7.me)**, Software Developer, love learning new things every single day and also passionate about e-businesses and e-marketing.
+
+
+## Wanna Contact Me?
 
 You can by email at **pierrehenrysoria+github [[AT]] gmail [[D0T]] com**
 
 
-## The License
+## License
 
 Generously distributed under [MIT License](http://opensource.org/licenses/mit-license.php). See LICENSE.txt file for further information.
