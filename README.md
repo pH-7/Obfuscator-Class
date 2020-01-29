@@ -113,4 +113,4 @@ You can by email at **pierrehenrysoria+github [[AT]] gmail [[D0T]] com**
 
 ## License
 
-The script is under [Creative Commons Attribution 3.0](http://creativecommons.org/licenses/by/3.0/) license or later; See the LICENSE.txt file.
+Generously distributed under [MIT License](http://opensource.org/licenses/mit-license.php). See LICENSE.txt file for further information.
