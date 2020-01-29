@@ -4,7 +4,7 @@
     "keywords": ["obfuscator", "obfuscation", "encryption", "hide-code", "encoder", "encode", "obfuscate"],
     "type": "library",
     "homepage": "https://ph7.me",
-    "license": "GPL-3.0-or-later",
+    "license": "MIT",
     "authors": [
         {
             "name": "Pierre-Henry Soria",
