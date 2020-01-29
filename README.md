@@ -90,7 +90,7 @@ file_put_contents($filename . '_obfuscated.php', '<?php ' . "\r\n" . $sObfusatio
 
 ## Requirement
 
-* PHP 5.2 or higher (works also with PHP 7.2, ..., 7.4, and beyond!)
+* PHP 5.3 or higher (works also with PHP 7.2, ..., 7.4, and beyond!)
 
 
 ## History
