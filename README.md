@@ -2,14 +2,16 @@
 
 Simple, easy-to-use and effective Obfuscator PHP class.
 
-**this is not a stupid `base64 encoding` script, but a real and effective obfuscation script).**
+**Not just a stupid `base64 encoding` script, but a real and effective obfuscation script).**
+
+Ideal to obfuscate some critical pieces of your software such as licensing verification functions.
 
 
 ## Overview
 
-If you want to keep your open source code private, but working on all Web hosting. This **Obfuscator** class is the obfuscator you need!
+If you want to keep your open source code private, but working on all Web hosting, this **Obfuscator** class is THE obfuscator you need!
 
-Not easy readable by developers (unless they are ready to spend lot of time). This will really discourage them :smiley:
+Not easily readable by developers (unless they are ready to spend lot of time). It will definitely discourage them! :smiley:
 
 
 ## Usage
@@ -93,12 +95,13 @@ file_put_contents($filename . '_obfuscated.php', '<?php ' . "\r\n" . $sObfusatio
 
 ## History
 
-I first created it for my needs, especially for the license file of my [pH7CMS Software](https://github.com/pH7Software/pH7-Social-Dating-CMS) in early 2014 but now (summer 2016), I don't need to keep this project private and want to share it for the others (hoping it will help you and saving time!).
+I began to create this obfuscation tool in early 2014 for my own needs, especially for pH7CMSPro that had a licensing file which was unlocking some premium features if a valid license key was purchased by a client.
+In summer 2016, the Pro version of [pH7CMS](https://github.com/pH7Software/pH7-Social-Dating-CMS) was discontinued, and realize there was no reason to keep this project private and I wanted to share it with others (hoping it will help them and save their time!).
 
-I did change anything since the first version and didn't review it, so could be improved. Feel free to add your improvements by forking it and create a new PR. It will be a pleasure for me to see your contribution!
+Feel free to add your improvements in it by forking the repo and creating a new PR. I will be pleased to review your contribution!
 
 
-FYI, in 3 years, I never found my obfuscated code unobfuscated (and one project which is [pH7CMS](https://sourceforge.net/p/ph7socialdating) had been downloaded by over 50,000 users) so you can be quite confident (however as you can understand, I cannot give any guarantee on it).
+FYI, in 3 years' time, I never found my obfuscated code unobfuscated (and the software was downloaded by over 50,000 users). You can be quite confident then.
 
 
 ## Who Am I?
