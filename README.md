@@ -1,4 +1,4 @@
-# PHP Obfuscator
+# 🔐 PHP Obfuscator
 
 Simple, easy-to-use and effective Obfuscator PHP class.
 
@@ -7,14 +7,14 @@ Simple, easy-to-use and effective Obfuscator PHP class.
 Ideal to obfuscate some critical pieces of your software such as licensing verification functions.
 
 
-## Overview
+## 👓 Overview 
 
 If you want to keep your open source code private, but working on all Web hosting, this **Obfuscator** class is THE obfuscator you need!
 
 Not easily readable by developers (unless they are ready to spend lot of time). It will definitely discourage them! :smiley:
 
 
-## Usage
+## 📓 Usage
 
 ### Take out `<php` before to obfuscate
 
@@ -88,12 +88,12 @@ file_put_contents($filename . '_obfuscated.php', '<?php ' . "\r\n" . $sObfusatio
 ```
 
 
-## Requirement
+## ⚙ Requirement
 
 * PHP 5.3 or higher (works also with PHP 7.2, ..., 7.4, and beyond!)
 
 
-## History
+## 📖 History
 
 I began to create this obfuscation tool in early 2014 for my own needs, especially for pH7CMSPro that had a licensing file which was unlocking some premium features if a valid license key was purchased by a client.
 In summer 2016, the Pro version of [pH7CMS](https://github.com/pH7Software/pH7-Social-Dating-CMS) was discontinued, and realize there was no reason to keep this project private and I wanted to share it with others (hoping it will help them and save their time!).
@@ -104,16 +104,25 @@ Feel free to add your improvements in it by forking the repo and creating a new 
 FYI, in 3 years' time, I never found my obfuscated code unobfuscated (and the software was downloaded by over 50,000 users). You can be quite confident then.
 
 
-## Who Am I?
+## 🤔 Who Am I?
 
-I'm **[Pierre-Henry Soria](https://ph7.me)**, Software Developer, love learning new things every single day and also passionate about e-businesses and e-marketing.
+I'm **[Pierre-Henry Soria][author-url]**, Software Developer, love learning new things every single day and also passionate about e-businesses and e-marketing.
 
-
-## Wanna Contact Me?
-
-You can by email at **pierrehenrysoria+github [[AT]] gmail [[D0T]] com**
+[![@phenrysay][twitter-image]][twitter-url]
 
 
-## License
+## 📧 Wanna Contact Me?
 
-Generously distributed under [MIT License](http://opensource.org/licenses/mit-license.php). See LICENSE.txt file for further information.
+You can email me at: **pierrehenrysoria+github [[AT]] gmail [[D0T]] com** 🤗
+
+
+## ⚖️ License
+
+Generously distributed under [MIT License][license-url]. See LICENSE.txt file for further information.
+
+
+<!-- GitHub's Markdown reference links -->
+[author-url]: https://ph7.me
+[license-url]: https://opensource.org/licenses/MIT
+[twitter-image]: https://img.shields.io/twitter/url/https/shields.io.svg?style=social
+[twitter-url]: https://twitter.com/phenrysay
